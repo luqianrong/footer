@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:background="#7f333333">
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="拍照"
+            android:background="#ffffff"
+            android:textColor="@color/blue_3"
+            android:textSize="@dimen/sp_16"
+            android:gravity="center"
+            android:id="@+id/tv_paizhao" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#d8d8d8"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="从手机相册选择"
+            android:background="#ffffff"
+            android:textColor="@color/blue_3"
+            android:textSize="@dimen/sp_16"
+            android:gravity="center"
+            android:id="@+id/tv_shouji" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="取消"
+            android:background="#ffffff"
+            android:textColor="@color/blue_3"
+            android:textSize="@dimen/sp_16"
+            android:gravity="center"
+            android:id="@+id/tv_quxiao" />
+    </LinearLayout>
+
+
+</RelativeLayout>

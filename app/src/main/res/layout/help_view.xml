@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.footer.widget.EaseTitleBar
+        android:id="@+id/find_title"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"/>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="@color/gray_b8b8b8"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_b8b8b8"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap_11"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivDui"
+                    android:layout_width="@dimen/gap_20"
+                    android:layout_height="@dimen/gap_20"
+                    android:layout_marginLeft="@dimen/gap_32"
+                    android:src="@drawable/xieyi_hb" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/gap_10"
+                    android:text="@string/wo"
+                    android:textColor="@color/gray_b8b8b8"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/help"
+                android:layout_width="fill_parent"
+                android:layout_height="37dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/blue_3"
+                android:textSize="17dp"
+                android:textColor="#ffffff"
+                android:text="确定开启救助功能"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

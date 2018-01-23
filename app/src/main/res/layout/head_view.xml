@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/home_banner"
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/banner_default"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:id="@+id/rl_myfabu"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/home_banner"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:text="现在"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/img_release"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/profile_fabu" />
+        </LinearLayout>
+        <View
+            android:id="@+id/bg_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/gap_10"
+            android:layout_below="@+id/rl_myfabu"
+            android:background="@color/gray_f8f8f8"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/rl_myfabu"
+            android:layout_marginBottom="5dp" />
+
+        <ImageView
+            android:id="@+id/home_icon"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="230dp"
+            android:background="@drawable/home_head"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/nickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="227dp"
+            android:layout_toLeftOf="@+id/home_icon"
+            android:text="西傻傻"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

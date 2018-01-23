@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/activity_header_height"
+    android:background="@color/colorblack"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/ibActionBack"
+        android:layout_width="@dimen/gap_45"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onClick"
+        android:visibility="gone">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:clickable="false"
+             />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/ibClose"
+        android:layout_width="@dimen/gap_45"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onClick"
+        android:visibility="gone">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:clickable="false"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvMiddle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scrollbars="none"
+            android:text="@string/biao"
+            android:textColor="@color/white"
+            android:textSize="@dimen/activity_header_middle_textsize" />
+
+        <ImageButton
+            android:id="@+id/pla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/gap_5"
+            android:layout_toRightOf="@+id/tvMiddle"
+
+            android:clickable="false"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/activity_header_right_textsize"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:id="@+id/ibAdd"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+
+            android:clickable="false" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvWanchang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:text="@string/wan"
+        android:textColor="@color/white"
+        android:textSize="@dimen/activity_header_middle_textsize"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvBao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="@dimen/activity_header_middle_textsize"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvTijiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/activity_header_middle_textsize"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/tvBian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:text="编辑"
+        android:textColor="@color/white"
+        android:textSize="@dimen/activity_header_middle_textsize"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/tel_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/ibRight"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@null"
+        android:visibility="gone"
+
+        />
+    <ImageButton
+        android:id="@+id/img_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:visibility="gone"></ImageButton>
+
+</RelativeLayout>

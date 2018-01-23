@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorblack">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="green_00A99B">#00A99B</color>
+
+    <color name="grey_666666">#666666</color>
+    <color name="grey_333333">#333333</color>
+    <color name="grey_eaeaea">#eaeaea</color>
+    <color name="red_f54337">#f54337</color>
+    <color name="grey_a3a3a3">#a3a3a3</color>
+    <color name="grey_c22c2c">#c22c2c</color>
+    <color name="green_00AB9B">#00a99b</color>
+    <color name="gray_f8f8f8">#F8F8F8</color>
+    <color name="gray_eaeaea">#eaeaea</color>
+    <color name="gray_b8b8b8">#b8b8b8</color>
+    <color name="gray_d8d8d8">#d8d8d8</color>
+    <color name="gray_f5f5f5">#f5f5f5</color>
+    <color name="gray_333333">#FF333333</color>>
+
+    <color name="red_1">#FFC93437</color>
+    <color name="blue_2">#FF375BF1</color>
+    <color name="yellow">#FFF7D23E</color>
+    <color name="green">#FF34A350</color>
+    <color name="cyan_500">#00bcd4</color>
+    <color name="albumback">#E1E0DE</color>
+    <color name="none_color">#00000000</color>
+    <color name="blue_3">#2ca6e5</color>
+</resources>

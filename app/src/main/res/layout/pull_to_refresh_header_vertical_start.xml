@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_inner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:weightSum="2">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:gravity="right|center_vertical">
+
+                            <!--style="@android:style/Widget.Holo.ProgressBar.Small"-->
+                            <!--android:indeterminate="true"-->
+                        <com.example.footer.views.CircularProgress
+                            android:id="@+id/pull_to_refresh_progress"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            app:borderWidths="1dp"
+                            android:layout_gravity="center"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/pull_to_refresh_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/ivZhu"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1.2"
+                        android:paddingLeft="10dp"
+                        android:gravity="left|center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/pull_to_refresh_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:gravity="center"
+                                android:textColor="#0e9ddc"
+                                android:singleLine="true"
+                                android:textAppearance="?android:attr/textAppearance"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/pull_to_refresh_sub_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/pull_to_refresh_text"
+                                android:layout_marginTop="2dp"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                android:textColor="#0e9ddc"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textSize="10sp"
+                                android:text=""
+                                android:visibility="visible" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</merge>

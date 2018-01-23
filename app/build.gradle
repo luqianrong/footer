@@ -1,0 +1,111 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId "com.example.footer"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    lintOptions {
+        abortOnError false
+        // 防止在发布的时候出现因MissingTranslation导致Build Failed!
+        disable 'MissingTranslation'
+        checkReleaseBuilds false
+    }
+
+    signingConfigs {
+        //这是以前配置的签名信息
+        debug {
+//            // No debug config
+            storeFile file("./keystore/foot.jks")
+            storePassword "123456"
+            keyAlias "foot"
+            keyPassword "123456"
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+        release {
+            storeFile file("./keystore/foot.jks")
+            storePassword "123456"
+            keyAlias "foot"
+            keyPassword "123456"
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+
+    }
+
+    buildTypes {
+        /*release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }*/
+        debug {
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+//          versionNameSuffix ""
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled true
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    repositories {
+    flatDir {
+        dirs 'libs'
+    }
+
+   }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:recyclerview-v7:23.3.0'
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    //    compile project(':imagewatcher')
+    compile 'ch.ielse:imagewatcher:1.0.0'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.github.wangjiegulu:AndroidBucket:1.0.4'
+    testCompile 'junit:junit:4.12'
+    compile project(':imagewatcher')
+    //内存泄漏的检测器--LeakCanary
+    compile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    compile project(':pickerview')
+    compile(name: 'NativeImgCompress', ext: 'aar')
+    compile 'com.google.code.gson:gson:2.3'
+    compile files('libs/commonlibs.jar')
+    compile project(':volley-master')
+    //添加recyclerview下拉刷新
+    compile 'com.androidkun:pulltorefreshrecyclerview:1.0.9'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile project(':flowlayout-lib')
+    compile files('libs/jcore-android-1.1.8.jar')
+    compile files('libs/jpush-android-3.1.0.jar')
+    compile project(':multi-image-selector')
+    compile files('libs/org.apache.http.legacy.jar')
+}

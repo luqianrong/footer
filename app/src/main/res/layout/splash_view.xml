@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_d8d8d8"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent">
+        <Button
+            android:id="@+id/btn_txt"
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/gap_100"
+            android:layout_height="@dimen/gap_100"
+            android:background="@color/blue_2"
+            android:text="测试"/>
+    </RelativeLayout>
+
+</LinearLayout>

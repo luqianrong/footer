@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f5f5f5"
+    android:id="@+id/main">
+    <com.example.footer.widget.EaseTitleBar
+        android:id="@+id/find_title"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/find_title"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gap_20"
+            android:background="@color/gray_f5f5f5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_d8d8d8" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/gap_60"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/gap_13"
+                android:text="@string/yong"
+                android:textColor="#666666"
+                android:textSize="@dimen/activity_header_right_textsize" />
+
+            <ImageView
+                android:id="@+id/ivTou"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="@dimen/gap_15"
+                android:background="@drawable/home_head" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_d8d8d8" />
+        <RelativeLayout
+            android:id="@+id/yong"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/gap_44"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tvYong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/gap_13"
+                android:text="昵称"
+                android:textColor="#666666"
+                android:textSize="@dimen/activity_header_right_textsize" />
+
+            <TextView
+                android:id="@+id/tx_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/gap_15"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="请输入昵称"
+                android:textColor="@color/grey_333333"
+                android:textColorHint="@color/grey_eaeaea"
+                android:textSize="@dimen/activity_header_right_textsize" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_d8d8d8" />
+        <!--<RelativeLayout
+            android:id="@+id/rl_call"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/gap_44"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvShou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/gap_13"
+                android:text="@string/shou"
+                android:textColor="#666666"
+                android:textSize="@dimen/activity_header_right_textsize" />
+
+            <TextView
+                android:id="@+id/tx_tel"
+                android:inputType="number"
+                android:maxLength="11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/gap_15"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="@string/qingshushou"
+                android:textColor="@color/grey_333333"
+                android:textColorHint="@color/grey_eaeaea"
+                android:textSize="@dimen/activity_header_right_textsize" />
+
+        </RelativeLayout>
+-->
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_d8d8d8" />
+-->
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gap_20"
+            android:background="@color/gray_f5f5f5" />-->
+        <RelativeLayout
+            android:id="@+id/reXing"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/gap_44"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/gap_13"
+                android:text="@string/xingbie"
+                android:textColor="@color/grey_333333"
+                android:textSize="@dimen/activity_header_right_textsize" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/gap_15">
+
+                <TextView
+                    android:id="@+id/etXing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:maxLength="2"
+                    android:text="男"
+                    android:textColor="@color/grey_333333"
+                    android:textColorHint="@color/grey_eaeaea"
+                    android:textSize="@dimen/activity_header_right_textsize" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_d8d8d8" />
+        <!--<RelativeLayout
+            android:id="@+id/rl_xx"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/gap_44"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/gap_13"
+                android:text="血型"
+                android:textColor="@color/grey_333333"
+                android:textSize="@dimen/activity_header_right_textsize" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/gap_15">
+
+                <TextView
+                    android:id="@+id/txt_xue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/xuexing"
+                    android:textColor="@color/grey_333333"
+                    android:textSize="@dimen/activity_header_right_textsize" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_d8d8d8" />-->
+
+        <RelativeLayout
+            android:id="@+id/rl_birthday"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/gap_44"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/gap_13"
+                android:text="生日"
+                android:textColor="@color/grey_333333"
+                android:textSize="@dimen/activity_header_right_textsize" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/gap_15">
+
+                <TextView
+                    android:id="@+id/txt_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2016年09月09日"
+                    android:textColor="@color/grey_333333"
+                    android:textSize="@dimen/activity_header_right_textsize" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_d8d8d8" />
+        <!-- <TextView
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/gap_20"
+             android:background="@color/gray_f5f5f5" />
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="0.5dp"
+             android:background="@color/gray_d8d8d8" />
+         <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="@dimen/gap_44"
+             android:orientation="horizontal">
+
+             <TextView
+
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="@dimen/gap_13"
+                 android:text="微信号"
+                 android:textColor="#666666"
+                 android:textSize="@dimen/activity_header_right_textsize" />
+
+             <TextView
+                 android:id="@+id/txt_wx"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:layout_centerVertical="true"
+                 android:layout_marginRight="@dimen/gap_15"
+                 android:background="@null"
+                 android:gravity="right"
+                 android:hint="请输入微信号"
+                 android:textColor="@color/grey_333333"
+                 android:textColorHint="@color/grey_eaeaea"
+                 android:textSize="@dimen/activity_header_right_textsize" />
+
+         </RelativeLayout>
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="0.5dp"
+             android:background="@color/gray_d8d8d8" />
+         <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="@dimen/gap_44"
+             android:orientation="horizontal">
+
+             <TextView
+                 android:id="@+id/tv_email"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="@dimen/gap_13"
+                 android:text="QQ"
+                 android:textColor="#666666"
+                 android:textSize="@dimen/activity_header_right_textsize" />
+
+             <TextView
+                 android:id="@+id/txt_qq"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:layout_centerVertical="true"
+                 android:layout_marginRight="@dimen/gap_15"
+                 android:background="@null"
+                 android:gravity="right"
+                 android:hint="请输入qq"
+                 android:textColor="@color/grey_333333"
+                 android:textColorHint="@color/grey_eaeaea"
+                 android:textSize="@dimen/activity_header_right_textsize" />
+
+         </RelativeLayout>
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="0.5dp"
+             android:background="@color/gray_d8d8d8" />
+         <RelativeLayout
+             android:layout_width="fill_parent"
+             android:layout_height="@dimen/gap_44"
+             android:orientation="horizontal">
+
+             <TextView
+                 android:id="@+id/tvZhen"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="@dimen/gap_13"
+                 android:text="邮箱"
+                 android:textColor="#666666"
+                 android:textSize="@dimen/activity_header_right_textsize" />
+
+             <TextView
+                 android:id="@+id/txt_email"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:layout_centerVertical="true"
+                 android:layout_marginRight="@dimen/gap_15"
+                 android:background="@null"
+                 android:gravity="right"
+                 android:hint="请输入邮箱"
+                 android:textColor="@color/grey_333333"
+                 android:textColorHint="@color/grey_eaeaea"
+                 android:textSize="@dimen/activity_header_right_textsize" />
+
+         </RelativeLayout>
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="0.5dp"
+             android:background="@color/gray_d8d8d8" />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gap_20"
+            android:background="@color/gray_f5f5f5" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_d8d8d8" />
+        <RelativeLayout
+            android:id="@+id/rl_pass"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/gap_44"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/txt_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/gap_13"
+                android:text="足迹密码"
+                android:textColor="#666666"
+                android:textSize="@dimen/activity_header_right_textsize" />
+
+            <TextView
+                android:id="@+id/et_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/gap_15"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="请输入密码"
+                android:textColor="@color/grey_333333"
+                android:textColorHint="@color/grey_eaeaea"
+                android:textSize="@dimen/activity_header_right_textsize" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_d8d8d8" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/loading"
+        layout="@layout/loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"></include>
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<resources>
+   <!-- <string name="app_name">Footer</string>-->
+
+    <string name="network_error">网络未连接</string>
+    <string name="network_error2">网络连接失败</string>
+    <string name="network_error3">网络请求失败</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">要刷新啦</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新</string>
+    <string name="pull_to_refresh_from_bottom_pull_label">加载更多</string>
+    <string name="pull_to_refresh_from_bottom_release_label">松开加载更多</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">正在加载</string>
+    <string name="title_activity_activity_second">ActivitySecond</string>
+
+    <string name="hello">Hello World, JPush!</string>
+
+    <string name="app_name">足迹</string>
+
+    <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+
+    <string name="style_hint">style为数字</string>
+
+    <string name="error_style_empty">style不能为空</string>
+
+    <string name="error_alias_empty">alias不能为空</string>
+
+    <string name="error_tag_empty">tag不能为空</string>
+
+    <string name="error_tag_gs_empty">格式不对</string>
+
+    <string name="error_network">网络连接异常,初始化失败 请检查网络！</string>
+
+    <string name="logining">程序在后台执行, 请查看日志！</string>
+
+    <string name="setting_su">设置成功</string>
+
+    <!-- 韩冰定义 -->
+    <string name="biao"></string>
+    <string name="wan">完成</string>
+    <string name="qing1">请输入用户名</string>
+    <string name="qing">请输入密码</string>
+    <string name="qing5">请输入旧密码</string>
+    <string name="qing6">请输入新密码</string>
+    <string name="qing7">请确认您的新密码</string>
+    <string name="qing3">请输入6—16位无空格密码</string>
+    <string name="qing4">请确认输入6—16位无空格密码</string>
+    <string name="qingq">请输入用户名/邮箱/手机号</string>
+    <string name="shi2">注册</string>
+    <string name="deng">登录</string>
+    <string name="wo">同意为自己的救助行为负责</string>
+    <string name="bian">《定州医疗注册协议》</string>
+    <string name="xia">提交</string>
+    <string name="ct">CT复查</string>
+    <string name="gua">就诊人：</string>
+    <string name="tian">添加时间：</string>
+    <string name="ti">提醒时间：</string>
+    <string name="nei">内容：</string>
+    <string name="tianjia">添加</string>
+    <string name="tijiao">提交</string>
+    <string name="yong">头像</string>
+    <string name="shou">手机号码</string>
+    <string name="chu">出生日期</string>
+    <string name="qingshudian">请输入电子邮件</string>
+    <string name="qingshushou">请输入手机号码</string>
+    <string name="qingshuzhen">请输入真实姓名</string>
+    <string name="qingshuchu">请输入出生年月(例如:1990-09-09)</string>
+    <string name="qingshuxiang">请输入详细的家庭住址</string>
+    <string name="er">身份证</string>
+    <string name="xuexing">血型</string>
+    <string name="qingshuzheng">请输入证件号码</string>
+    <string name="qingshushe">请输入社保卡方便报销</string>
+    <string name="jia">家庭地址</string>
+    <string name="ji">基本信息</string>
+    <string name="xing">姓名</string>
+    <string name="xingbie">性别</string>
+    <string name="zheng">证件类型</string>
+    <string name="zhenghao">证件号码</string>
+    <string name="she">社保卡号</string>
+    <string name="lian">联系方式</string>
+    <string name="dian">电子邮件</string>
+    <string name="di">地址</string>
+    <string name="zhu">注：</string>
+    <string name="wen">温馨提示：</string>
+    <string name="zuo">左滑可删除就诊人信息</string>
+    <string name="hao">号为必填项</string>
+    <string name="zhoubiao">周期提醒标题</string>
+    <string name="zhounei">周期提醒内容</string>
+    <string name="chang">您现在还没有常用挂号人，请</string>
+    <string name="send">发送</string>
+    <string name="comment_content">评论</string>
+
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+
+ <string name="mis_folder_all">All Images</string>
+ <string name="mis_preview">Preview</string>
+ <string name="mis_msg_no_camera">No system camera found</string>
+ <string name="mis_msg_amount_limit">Select images amount is limit</string>
+ <string name="mis_action_done">Done</string>
+ <string name="mis_action_button_string">%1$s(%2$d/%3$d)</string>
+ <string name="mis_photo_unit">Shot</string>
+ <string name="mis_tip_take_photo">Take photo</string>
+ <string name="mis_error_image_not_exist">Image error</string>
+ <string name="mis_error_no_permission">Has no permission</string>
+ <string name="mis_permission_dialog_title">Permission Deny</string>
+ <string name="mis_permission_dialog_ok">OK</string>
+ <string name="mis_permission_dialog_cancel">CANCEL</string>
+ <string name="mis_permission_rationale">Storage read permission is needed to pick files.</string>
+ <string name="mis_permission_rationale_write_storage">Storage write permission is needed to save the image.</string>
+</resources>
